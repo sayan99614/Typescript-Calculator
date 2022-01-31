@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto');
+  body{
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    zoom: 75%;
+  }
+  .bg-cal {
+    background-color: rgb(240, 242, 242);
+  }
+  #boxlayout {
+    width: 500px;
+  }
+  #display {
+    margin-top: 5px;
+    height: 100px;
+    font-size: 50px;
+    text-align: right;
+    border: none;
+    background-color: rgb(240, 242, 242);
+    margin-bottom: 5px;
+  }
+  .item-flex-1 {
+    border: none;
+    display: flex;
+    margin-right: 20px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .row-1 {
+    position: relative;
+    left: 20px;
+  }
+  .item-flex-2 {
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .row-3 {
+    position: relative;
+    left: 15px;
+  }
+  .item-flex-3 {
+    display: flex;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 200px;
+  }
+  .icon-img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 5px;
+  }
+  
+  .fa-angle-down {
+    position: relative;
+    top: 4px;
+    margin-left: 5px;
+  }
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  .box {
+    border: none;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    height: 60px;
+    width: 90px;
+    padding: 10px;
+    box-shadow: rgb(240, 225, 225) 3px 0px 9px -3px;
+    background-color: rgb(246, 246, 246);
+  }
+  sup {
+    vertical-align: super;
+    font-size: smaller;
+    font-size: 15px;
+  }
+  .box {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .white {
+    background-color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .equal {
+    background-color: rgb(146, 194, 232);
+    font-size: 26px;
+    font-weight: 400;
+  }
+  #mc,
+  #mr {
+    color: rgb(211, 211, 211);
+  }
+  #tri {
+    cursor: pointer;
+  }
+  #fun{
+      cursor: pointer;
+  }
+  .trigonometry {
+    position: relative;
+  }
+  .function{
+      position: relative;
+  }
+  .none {
+    display: none;
+  }
+  .tri-list {
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgb(177 174 174) 3px 3px 9px -3px;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 20px;
+    left: -5px;
+  }
+  .tri-list .box,.fun-list .box{
+    margin-left: 1.2px;
+    margin-right: 1.2px;
+  }
+  .fun-list {
+    background-color: rgb(236, 233, 233);
+    box-shadow: rgb(177 174 174) 3px 3px 9px -3px;
+    padding: 10px;
+    width: 298px;
+    height: fit-content;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 20px;
+    left: -7px;
+  }
+  .trigonometry:hover .tri-list {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  .function:hover .fun-list {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  
