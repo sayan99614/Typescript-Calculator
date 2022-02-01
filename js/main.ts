@@ -588,7 +588,8 @@ function calculator(btn:cl_btn|btns) {
       if (
         data.operation.length > 0 &&
         data.formula.length > 0 &&
-        checkporm == 0
+        checkporm == 0 &&
+        parseInt(data.operation[pointer])>0
       ) {
         data.operation[pointer] = "-" + data.operation[pointer];
         data.formula[pointer] = "-" + data.formula[pointer];
@@ -597,7 +598,6 @@ function calculator(btn:cl_btn|btns) {
       }
     }
   } else if (btn.type === "calculate") {
-    checkporm = 0;
     let formula_str = data.formula.join("");
     let POWER_SEARCH_RESULT = search(data.formula, POWER);
     let FACTORIAL_SEARCH_RESULT = search(data.formula, FACTORIAL);
@@ -636,6 +636,7 @@ function calculator(btn:cl_btn|btns) {
     data.operation = [];
     data.formula.push(result);
     data.operation.push(result);
+    checkporm = 0;
   } else if (btn.type == "trigo_function") {
     data.operation.push(btn.symbol + "(");
     data.formula.push(btn.formula);
@@ -871,7 +872,7 @@ memory.addEventListener("click", (event: any) => {
   setdim(memarr.length);
 });
 
-function setdim(isdim: number) {
+function setdim(isdim: number):void {
   let mc = document.getElementById(`mc`);
   let mr = document.getElementById(`mr`);
   if (isdim > 0) {
@@ -883,7 +884,7 @@ function setdim(isdim: number) {
   }
 }
 
-const fetchFromStorage = function () {
+const fetchFromStorage = function ():void {
   setdim(memarr.length);
   const len = window.localStorage.length;
   for (let i = 0; i < len; i++) {

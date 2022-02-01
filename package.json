@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/sayan99614/Typescript-Calculator#readme",
   "dependencies": {
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
     "typescript": "^4.5.5"
   }
 }
