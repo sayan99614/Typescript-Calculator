@@ -731,7 +731,7 @@ function powerBaseGetter(formula, POWER_SEARCH_RESULT) {
   return power_bases;
 }
 
-function updateOutput(operation) {
+function updateOutput(operation):void {
   display.value = operation;
 }
 let deg = true;
